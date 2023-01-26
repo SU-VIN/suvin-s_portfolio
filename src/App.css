@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Bitgoeul_Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Bitgoeul_Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: linear-gradient(124.26deg, #ccf7c5 36.67%, #539c7d 99.61%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bitgoeul_Bold";
+  min-height: 100vh;
+  margin: 0px;
+}
+@media (min-width: 650px) {
+  .App {
+    width: 640px;
+  }
+}
+
+@media (max-width: 650px) {
+  .App {
+    width: 90vw;
+  }
+}
+
+/* Home */
+.Home {
+  display: flex;
+  justify-content: space-between;
+}
+.Home .Me_img {
+  display: flex;
+}
+
+.Home .Me_content {
+  color: white;
+  font-size: 40px;
+}
+hr {
+  height: 5px;
+  background-color: white;
+  border: 0px;
+}
