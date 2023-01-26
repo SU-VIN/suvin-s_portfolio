@@ -30,18 +30,25 @@ body {
 /* Home */
 .Home {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 .Home .Me_img {
-  display: flex;
+  padding-bottom: 200px;
+  padding-right: 300px;
 }
 
 .Home .Me_content {
   color: white;
-  font-size: 40px;
+  font-size: 35px;
+  line-height: 100%;
 }
-hr {
+
+.Home .Me_content hr {
   height: 5px;
   background-color: white;
   border: 0px;
+}
+.Home .Me_content h5 {
+  margin-top: 10px;
 }
