@@ -29,26 +29,61 @@ body {
 
 /* Home */
 .Home {
+  display: grid;
+}
+.Home .top {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.Home .Me_img {
+.Home .top .Me_img {
   padding-bottom: 200px;
   padding-right: 300px;
 }
 
-.Home .Me_content {
+.Home .top .Me_content {
   color: white;
   font-size: 35px;
   line-height: 100%;
 }
 
-.Home .Me_content hr {
+.Home .top .Me_content hr {
   height: 5px;
   background-color: white;
   border: 0px;
 }
-.Home .Me_content h5 {
+.Home .top .Me_content h5 {
   margin-top: 10px;
+}
+
+/* menubar */
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 150px;
+  width: 100%;
+}
+.Menubar {
+  display: grid;
+  justify-content: space-around;
+}
+.Menubar .backgrondMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 600px;
+  height: 80px;
+  background-color: rgba(14, 14, 14, 0.6);
+  border: 1px solid #b3b3b3;
+  border-radius: 20px;
+}
+
+.Menubar .backgrondMenu .icon {
+  font-size: 60px;
+  color: #25402d;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 10px;
+  cursor: pointer;
 }
