@@ -87,3 +87,8 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
+
+.Menubar .backgrondMenu .icon:hover {
+  font-size: 80px;
+  transform: translateY(-15px);
+}
