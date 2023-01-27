@@ -1,5 +1,11 @@
+import MenuBar from "../components/MenuBar";
+
 const Contact = () => {
-  return <div>contact</div>;
+  return (
+    <div>
+      <MenuBar />
+    </div>
+  );
 };
 
 export default Contact;
