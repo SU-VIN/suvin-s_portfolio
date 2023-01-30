@@ -79,7 +79,7 @@ body {
   border-radius: 20px;
 }
 
-.Menubar .backgrondMenu .icon {
+.Menubar .icon {
   font-size: 60px;
   color: #25402d;
   background-color: rgba(217, 217, 217, 1);
@@ -87,7 +87,7 @@ body {
   cursor: pointer;
 }
 
-.Menubar .backgrondMenu .icon:hover {
+.Menubar .icon:hover {
   font-size: 80px;
   transform: translateY(-15px);
 }
