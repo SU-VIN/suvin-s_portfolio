@@ -7,12 +7,14 @@ const Me = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <div className="Me">
       <div className="Top">
         <HiMenu className="Menu" onClick={toggleMenu} />
         {isOpen ? (
           <>
+            <div className="opaque"></div>
             <SideMenuBar isOpen={isOpen} setIsOpen={setIsOpen} />
           </>
         ) : (

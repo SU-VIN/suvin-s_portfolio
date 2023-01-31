@@ -77,6 +77,7 @@ body {
 .Menubar .icon:hover {
   font-size: 80px;
   transform: translateY(-15px);
+  transition: 0.05s;
 }
 
 /* Me */
@@ -85,7 +86,6 @@ body {
   background: linear-gradient(180deg, #e6efe5 0%, #ffffff 100%);
   min-height: 100vh;
   display: grid;
-  font-family: "Bitgoeul_Bold";
   font-size: 50px;
   flex-wrap: nowrap;
   justify-content: start;
@@ -98,19 +98,39 @@ body {
 
 .Me .Menu {
   margin-right: 200px;
+
   cursor: pointer;
 }
 
 /* SideMenuBar */
 
 .SideMenuBar {
-  z-index: 5;
-  padding: 12px;
-  border-radius: 15px 0 0 15px;
+  background: #e3f3df;
+  z-index: 1;
+  border-radius: 0px 80px 80px 0px;
   height: 100%;
-  width: 55%;
-  left: -55%;
-  top: 0;
+  width: 250px;
   position: fixed;
   transition: 0.5s ease;
+  flex-wrap: wrap;
+}
+
+.SideMenuBar .xbtn {
+  cursor: pointer;
+}
+.SideMenuBar .MenuList {
+  padding-top: 150px;
+  font-size: 40px;
+}
+.SideMenuBar .MenuList h3 {
+  cursor: pointer;
+  padding-bottom: 30px;
+}
+
+.opaque {
+  background: rgba(1, 1, 1, 0.4);
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: fixed;
 }
