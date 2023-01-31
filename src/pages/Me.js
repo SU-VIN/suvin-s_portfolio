@@ -10,7 +10,7 @@ const Me = () => {
 
   return (
     <div className="Me">
-      <div className="Top">
+      <div className="top">
         <HiMenu className="Menu" onClick={toggleMenu} />
         {isOpen ? (
           <>
@@ -22,7 +22,7 @@ const Me = () => {
         )}
         <h1>Me</h1>
       </div>
-      <div className="Bottom"></div>
+      <div className="bottom"></div>
     </div>
   );
 };

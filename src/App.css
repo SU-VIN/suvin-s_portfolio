@@ -92,11 +92,33 @@ body {
   align-items: flex-start;
 }
 
-.Me .Top {
+.Me .top {
   display: flex;
 }
 
 .Me .Menu {
+  margin-right: 200px;
+
+  cursor: pointer;
+}
+
+/* Project */
+
+.Project {
+  background: linear-gradient(180deg, #e6efe5 0%, #ffffff 100%);
+  min-height: 100vh;
+  display: grid;
+  font-size: 50px;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.Project .top {
+  display: flex;
+}
+
+.Project .Menu {
   margin-right: 200px;
 
   cursor: pointer;
