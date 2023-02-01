@@ -129,10 +129,13 @@ body {
 }
 .Me .suvin {
   display: flex;
+  align-items: center;
   padding-bottom: 200px;
 }
-.Me .pic {
+.Me .suvinpic {
+  margin-left: 10px;
   width: 300px;
+  box-shadow: rgba(100, 100, 111) -4px 10px 10px 0px;
 }
 .Me .suvinList {
   display: grid;
@@ -151,6 +154,21 @@ body {
 .Me .projectList p {
   color: rgba(33, 123, 80, 1);
   font-size: 35px;
+}
+.Me .pjList {
+  padding-left: 100px;
+  padding-bottom: 100px;
+  width: 100vh;
+}
+.Me hr {
+  height: 2px;
+  background-color: rgba(1, 1, 1, 0.4);
+  border: 0px;
+}
+
+.Me .awards {
+  font-size: 30px;
+  display: grid;
 }
 /* Project */
 

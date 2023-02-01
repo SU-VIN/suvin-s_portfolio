@@ -33,7 +33,7 @@ const Me = () => {
         <h4>임수빈</h4>
         <div className="suvin">
           <img
-            className="pic"
+            className="suvinpic"
             src={process.env.PUBLIC_URL + `assets/SuvinPic.png`}
           />
           <div className="suvinList">
@@ -46,6 +46,11 @@ const Me = () => {
 
         <h4>프로젝트</h4>
         <div className="projectList">
+          <img
+            className="pjList"
+            src={process.env.PUBLIC_URL + `assets/pjList.png`}
+          />
+          <hr />
           <h3>
             <p>HSU_On</p>한성대학교 메타버스 캠퍼스
           </h3>
@@ -56,12 +61,21 @@ const Me = () => {
             <p>Hansung Vote</p>학생회 선거 웹페이지
           </h3>
           <h3>
+            <p>감정일기장</p>서비스형 웹페이지
+          </h3>
+          <h3>
             <p>내 MBTI를 맞춰봐</p>서비스형 웹페이지
           </h3>
         </div>
 
         <h4>수상경력</h4>
-        <div className="awards"></div>
+        <div className="awards">
+          <p>2021 한성공학경진대회 금상(2위)</p>
+          <p>2021 한성 C&C Festival 대상(1위)</p>
+          <p>2021 한성발전공헌상</p>
+          <p>2022 컴퓨터공학부 캡스톤디자인 우수상(2위)</p>
+          <p>2022 한성공학경진대회 동상(4위)</p>
+        </div>
       </div>
     </div>
   );
