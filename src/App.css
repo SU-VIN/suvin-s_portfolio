@@ -228,3 +228,9 @@ body {
   width: 100%;
   position: fixed;
 }
+
+/* Contact */
+.Contact {
+  background: linear-gradient(124.26deg, #ccf7c5 36.67%, #539c7d 99.61%);
+  min-height: 100vh;
+}

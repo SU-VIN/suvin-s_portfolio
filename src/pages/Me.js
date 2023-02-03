@@ -11,15 +11,10 @@ const Me = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleScroll0 = () => {
-    scrollRef.current[0].scrollIntoView({ behavior: "smooth" });
+  const handleScroll = (ref) => {
+    ref.scrollIntoView({ behavior: "smooth" });
   };
-  const handleScroll1 = () => {
-    scrollRef.current[1].scrollIntoView({ behavior: "smooth" });
-  };
-  const handleScroll2 = () => {
-    scrollRef.current[2].scrollIntoView({ behavior: "smooth" });
-  };
+
   return (
     <div className="Me">
       <div className="top">
@@ -35,9 +30,28 @@ const Me = () => {
         <div className="aboutMe">
           <h1>Me</h1>
           <div className="hashTag">
-            <h5 onClick={handleScroll0}># 임수빈</h5>
-            <h5 onClick={handleScroll1}># 프로젝트</h5>
-            <h5 onClick={handleScroll2}># 수상경력</h5>
+            <h5
+              onClick={() => {
+                handleScroll(scrollRef.current[0]);
+              }}
+            >
+              # 임수빈
+            </h5>
+
+            <h5
+              onClick={() => {
+                handleScroll(scrollRef.current[1]);
+              }}
+            >
+              # 프로젝트
+            </h5>
+            <h5
+              onClick={() => {
+                handleScroll(scrollRef.current[2]);
+              }}
+            >
+              # 수상경력
+            </h5>
           </div>
         </div>
       </div>

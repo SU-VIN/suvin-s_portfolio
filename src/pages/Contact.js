@@ -1,7 +1,8 @@
 import MenuBar from "../components/MenuBar";
+
 const Contact = () => {
   return (
-    <div>
+    <div className="Contact">
       <MenuBar />
     </div>
   );
