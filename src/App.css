@@ -170,6 +170,10 @@ body {
   font-size: 30px;
   display: grid;
 }
+
+.Me h4 {
+  cursor: pointer;
+}
 /* Project */
 
 .Project {

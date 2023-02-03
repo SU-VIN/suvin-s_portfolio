@@ -1,13 +1,25 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import SideMenuBar from "../components/SideMenuBar";
+
 const Me = () => {
+  const scrollRef = useRef([]);
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleScroll0 = () => {
+    scrollRef.current[0].scrollIntoView({ behavior: "smooth" });
+  };
+  const handleScroll1 = () => {
+    scrollRef.current[1].scrollIntoView({ behavior: "smooth" });
+  };
+  const handleScroll2 = () => {
+    scrollRef.current[2].scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="Me">
       <div className="top">
@@ -23,14 +35,20 @@ const Me = () => {
         <div className="aboutMe">
           <h1>Me</h1>
           <div className="hashTag">
-            <h5># 임수빈</h5>
-            <h5># 프로젝트</h5>
-            <h5># 수상경력</h5>
+            <h5 onClick={handleScroll0}># 임수빈</h5>
+            <h5 onClick={handleScroll1}># 프로젝트</h5>
+            <h5 onClick={handleScroll2}># 수상경력</h5>
           </div>
         </div>
       </div>
       <div className="bottom">
-        <h4>임수빈</h4>
+        <h4
+          ref={(el) => {
+            scrollRef.current[0] = el;
+          }}
+        >
+          임수빈
+        </h4>
         <div className="suvin">
           <img
             className="suvinpic"
@@ -44,7 +62,13 @@ const Me = () => {
           </div>
         </div>
 
-        <h4>프로젝트</h4>
+        <h4
+          ref={(el) => {
+            scrollRef.current[1] = el;
+          }}
+        >
+          프로젝트
+        </h4>
         <div className="projectList">
           <img
             className="pjList"
@@ -68,7 +92,13 @@ const Me = () => {
           </h3>
         </div>
 
-        <h4>수상경력</h4>
+        <h4
+          ref={(el) => {
+            scrollRef.current[2] = el;
+          }}
+        >
+          수상경력
+        </h4>
         <div className="awards">
           <p>2021 한성공학경진대회 금상(2위)</p>
           <p>2021 한성 C&C Festival 대상(1위)</p>
