@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { HiMenu } from "react-icons/hi";
+import { BiArrowToTop } from "react-icons/bi";
 import SideMenuBar from "../components/SideMenuBar";
 
 const Me = () => {
@@ -16,8 +17,19 @@ const Me = () => {
   };
 
   return (
-    <div className="Me">
+    <div
+      className="Me"
+      ref={(el) => {
+        scrollRef.current[3] = el;
+      }}
+    >
       <div className="top">
+        <BiArrowToTop
+          className="topButton"
+          onClick={() => {
+            handleScroll(scrollRef.current[3]);
+          }}
+        />
         <HiMenu className="Menu" onClick={toggleMenu} />
         {isOpen ? (
           <>
