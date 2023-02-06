@@ -43,6 +43,7 @@ const Me = () => {
           <h1>Me</h1>
           <div className="hashTag">
             <h5
+              className="ht1"
               onClick={() => {
                 handleScroll(scrollRef.current[0]);
               }}
@@ -51,6 +52,7 @@ const Me = () => {
             </h5>
 
             <h5
+              className="ht2"
               onClick={() => {
                 handleScroll(scrollRef.current[1]);
               }}
@@ -58,6 +60,7 @@ const Me = () => {
               # 프로젝트
             </h5>
             <h5
+              className="ht3"
               onClick={() => {
                 handleScroll(scrollRef.current[2]);
               }}

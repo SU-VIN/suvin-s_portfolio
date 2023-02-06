@@ -171,6 +171,87 @@ body {
   display: grid;
 }
 
+.Me .ht1 {
+  padding-left: 20vh;
+  animation: move1 15s infinite ease-in-out;
+}
+.Me .ht2 {
+  padding-left: 60vh;
+  animation: move2 15s infinite ease-in-out;
+}
+.Me .ht3 {
+  padding-left: 40vh;
+  animation: move3 15s infinite ease-in-out;
+}
+
+.Me .ht1:hover {
+  color: rgb(115, 164, 143);
+}
+.Me .ht2:hover {
+  color: rgb(149, 210, 183);
+}
+.Me .ht3:hover {
+  color: rgb(150, 225, 192);
+}
+
+@keyframes move1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  25% {
+    transform: translate(-90px, 90px);
+  }
+  50% {
+    transform: translate(0px, 180px);
+  }
+  75% {
+    transform: translate(500px, 150px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes move2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  25% {
+    transform: translate(-120px, 120px);
+  }
+  50% {
+    transform: translate(0px, 140px);
+  }
+  75% {
+    transform: translate(300px, 200px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes move3 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  25% {
+    transform: translate(90px, -90px);
+  }
+  50% {
+    transform: translate(0px, -180px);
+  }
+  75% {
+    transform: translate(-300px, -150px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
 .Me h4 {
   cursor: pointer;
 }
