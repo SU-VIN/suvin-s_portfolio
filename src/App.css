@@ -114,7 +114,7 @@ body {
   padding-left: 250px;
 }
 
-.Me .hashTag {
+.hashTag {
   font-family: "YUniverse-B";
   padding-left: 100px;
   cursor: pointer;
@@ -171,29 +171,43 @@ body {
   display: grid;
 }
 
-.Me .ht1 {
+.ht1 {
   padding-left: 20vh;
-  animation: move1 15s infinite ease-in-out;
+  animation: move1 20s infinite ease-in-out;
 }
-.Me .ht2 {
-  padding-left: 60vh;
-  animation: move2 15s infinite ease-in-out;
+.ht2 {
+  padding-left: 50vh;
+  animation: move2 20s infinite ease-in-out;
 }
-.Me .ht3 {
+.ht3 {
   padding-left: 40vh;
-  animation: move3 15s infinite ease-in-out;
+  animation: move3 20s infinite ease-in-out;
+}
+.ht4 {
+  padding-left: 20vh;
+  animation: move2 20s infinite ease-in-out;
+}
+.ht5 {
+  padding-left: 30vh;
+  animation: move4 20s infinite ease-in-out;
 }
 
-.Me .ht1:hover {
+.ht1:hover {
   color: rgb(115, 164, 143);
 }
-.Me .ht2:hover {
+.ht2:hover {
   color: rgb(149, 210, 183);
 }
-.Me .ht3:hover {
+.ht3:hover {
   color: rgb(150, 225, 192);
 }
 
+.ht4:hover {
+  color: rgb(146, 189, 170);
+}
+.ht5:hover {
+  color: rgb(152, 186, 172);
+}
 @keyframes move1 {
   0% {
     transform: translate(0px, 0px);
@@ -251,9 +265,24 @@ body {
     transform: translate(0px, 0px);
   }
 }
+@keyframes move4 {
+  0% {
+    transform: translate(0px, 0px);
+  }
 
-.Me h4 {
-  cursor: pointer;
+  25% {
+    transform: translate(120px, -360px);
+  }
+  50% {
+    transform: translate(-120px, -10px);
+  }
+  75% {
+    transform: translate(-400px, -120px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 .topButton {
@@ -280,16 +309,39 @@ body {
   align-items: flex-start;
 }
 
-.Project .top {
-  display: flex;
-}
-
 .Project .Menu {
   margin-right: 200px;
-
+  position: fixed;
   cursor: pointer;
 }
+.Project .aboutProject {
+  display: flex;
+  padding-left: 250px;
+}
+.Project .bottom {
+  display: grid;
+  padding-top: 200px;
+  padding-left: 250px;
+  padding-bottom: 200px;
+}
 
+.guessmymbti {
+  padding-bottom: 200px;
+}
+
+.emotiondiary {
+  padding-bottom: 200px;
+}
+
+.hansungvote {
+  padding-bottom: 200px;
+}
+.king {
+  padding-bottom: 200px;
+}
+.hsuon {
+  padding-bottom: 200px;
+}
 /* SideMenuBar */
 
 .SideMenuBar {
